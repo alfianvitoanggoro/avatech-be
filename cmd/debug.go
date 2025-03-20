@@ -16,10 +16,10 @@ func NewDebug(message string) *Debug {
 
 func (d *Debug) Success() {
 	// A newline will be appended automatically
-	color.Green("Prints %s in green.", "text")
+	color.Green("Prints %s in green.", d.message)
 }
 
 func (d *Debug) Error() {
 	// A newline will be appended automatically
-	color.Red("Prints %s in red.", "text")
+	color.Red("Prints %s in red.", d.message)
 }
