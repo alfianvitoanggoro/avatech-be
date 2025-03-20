@@ -1,7 +1,5 @@
-# avatech
-backend avatech
+# AVATECH
+AVATECH is a platform as IT Consultant if you need build many apps
 
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=alfianvitoanggoro&show_icons=true&theme=transparent)
-
-[![alfianvitoanggoro's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=alfianvitoanggoro)]
+# AVATECH BE
+AVATECH BE is a backend of apps avatech platform
