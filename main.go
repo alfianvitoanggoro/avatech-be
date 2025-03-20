@@ -1,9 +1,9 @@
 package main
 
-import "github.com/alfianvitoanggoro/avatech/cmd"
+import (
+	"github.com/alfianvitoanggoro/avatech/test"
+)
 
 func main() {
-	debug := cmd.NewDebug("Hello World")
-	debug.Success()
-	debug.Error()
+	test.Test()
 }
