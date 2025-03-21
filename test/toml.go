@@ -7,13 +7,6 @@ import (
 	"github.com/pelletier/go-toml/v2"
 )
 
-// Struct matching the TOML structure
-type config struct {
-	App struct {
-		Version string `toml:"version"`
-	} `toml:"app"`
-}
-
 func Toml() {
 	// Read file .config.toml
 	data, err := os.ReadFile(".config.toml")
@@ -25,7 +18,7 @@ func Toml() {
 	fmt.Printf("Data: %s\n", data)
 
 	// Parse TOML
-	var config config
+	var config *Config
 	err = toml.Unmarshal(data, &config)
 	if err != nil {
 		fmt.Println("Error parsing TOML:", err)
@@ -33,5 +26,7 @@ func Toml() {
 	}
 
 	// Cetak versi
+	fmt.Println("Version:", config.App.Name)
 	fmt.Println("Version:", config.App.Version)
+	fmt.Println("Version:", config.App.Debug)
 }

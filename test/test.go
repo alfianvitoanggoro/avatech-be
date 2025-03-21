@@ -7,7 +7,10 @@ func Test() {
 	// Test get toml document
 	// Toml()
 
-	// Test get yml document
-	Yml()
+	// Test get yaml document
+	// Yaml()
+
+	// Test use viper for read document
+	Viper()
 
 }

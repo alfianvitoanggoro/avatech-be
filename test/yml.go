@@ -8,15 +8,7 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-type Config struct {
-	App struct {
-		Name    string `yaml:"name"`
-		Version string `yaml:"version"`
-		Debug   bool   `yaml:"debug"`
-	} `yaml:"app"`
-}
-
-func Yml() {
+func Yaml() {
 	// Baca file YAML
 	data, err := os.ReadFile(".config.yaml")
 	if err != nil {
