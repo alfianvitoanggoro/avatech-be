@@ -21,6 +21,26 @@ func Test() {
 	// CronJobWithoutLibrary()
 
 	// Test use cobra
-	Cobra()
+	// Cobra()
 
+	// Test use resty
+	r := NewResty()
+	// r.GetData()
+	// r.GetDataWithPathParam(100)
+	// Create Post
+	// newPost := Post{
+	// 	UserID: 1,
+	// 	Title:  "Belajar Go dengan Resty",
+	// 	Body:   "Ini adalah contoh request POST dengan Go dan Resty.",
+	// }
+
+	// r.CreatePost(newPost)
+
+	// Update Post
+	updatePost := Post{
+		UserID: 1,
+		Title:  "Belajar Go dengan Resty Update",
+		Body:   "Ini adalah contoh request POST dengan Go dan Resty Update.",
+	}
+	r.UpdatePost(100, updatePost)
 }

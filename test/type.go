@@ -10,3 +10,12 @@ type App struct {
 type Config struct {
 	App App `toml:"app" yaml:"app"`
 }
+
+// Resty
+// Struct untuk menyimpan data response
+type Post struct {
+	UserID int    `json:"userId"`
+	ID     int    `json:"id"`
+	Title  string `json:"title"`
+	Body   string `json:"body"`
+}
