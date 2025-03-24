@@ -19,3 +19,10 @@ type Post struct {
 	Title  string `json:"title"`
 	Body   string `json:"body"`
 }
+
+// CSV
+type Client struct {
+	ID   int    `csv:"id"`
+	Name string `csv:"name"`
+	Age  int    `csv:"age"`
+}
