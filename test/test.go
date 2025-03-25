@@ -21,7 +21,7 @@ func Test() {
 	// CronJobWithoutLibrary()
 
 	// * Test use cobra
-	// Cobra()
+	Cobra()
 
 	// * Test use resty
 	// r := NewResty()
@@ -50,7 +50,11 @@ func Test() {
 	// r.UpdatePost(100, updatePost)
 
 	// * Test use go-csv for read csv extension
-	c := NewCSV()
-	c.CreateDataCSV()
+	// c := NewCSV()
+	// c.CreateDataCSV()
 	// c.ReadCSV()
+
+	// * Test Asqynq for background job, task scheduler
+	// a := NewAsynq()
+	// a.Worker()
 }
