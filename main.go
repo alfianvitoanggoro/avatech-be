@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/alfianvitoanggoro/avatech/test"
+	"github.com/alfianvitoanggoro/avatech/cmd"
 )
 
 func main() {
-	test.Test()
+	cmd.Execute()
 }
